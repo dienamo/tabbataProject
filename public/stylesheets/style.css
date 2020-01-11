@@ -1,0 +1,100 @@
+*, :before, :after {box-sizing:border-box;}
+img {max-width:100%;}
+
+a {text-decoration:inherit; color:inherit;}
+
+@media (min-width:900px) {
+  :root {
+    --pad:4em;
+  }
+}
+
+body {
+  margin:0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fcfbfb; 
+}
+
+a {
+  color: #00B7FF; }
+
+#navigation-container {
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+#logo a img {
+  width : 137px;
+  margin-left: 55px;
+}
+
+#navigation-container img {
+  width : 27px;
+}
+
+#list-of-items img {
+  width: 100%;
+}
+
+.catch-phrase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+  color: #E1C28F;
+  font-size: 11px;
+  position: absolute;
+  width: 100%;
+}
+
+#search-bar {
+  text-align: center;
+  position: relative;
+  margin-top: 154px;
+  margin-bottom: 10px;
+}
+
+#search-bar input {
+  width: 303px;
+  height: 40px;
+  background-image: url('../images/glass.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 9px;
+  background-position-y: 5px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px #888888;
+}
+
+#search-bar input::placeholder {
+  text-indent: 45px;
+  color: #E1C28F;
+}
+
+
+#log-in-form {
+  text-align: center;
+}
+
+#password-form {
+  font-size : 20px;
+}
+
+#id-form {
+  font-size : 20px;
+}
+
+#button-login {
+  font-size: 20px;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

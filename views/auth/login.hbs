@@ -1,0 +1,25 @@
+<form action="/login" method="POST" id="log-in-form">
+  <div>
+    <label for="username" id='id-form'>email:</label>
+    <input type="text" name="username">
+  </div>
+  
+  <div>
+    <label for="password" id='password-form'>Password:</label>
+    <input type="password" name="password">
+  </div>
+  
+  {{#if errorMessage}}
+  <div class="error-message">{{errorMessage}}</div>
+  {{/if}}
+  
+  <div>
+    <button id="button-login">Log in</button>
+  </div>
+</form>
+<p><a href="/auth/google">Login With Google</a></p>
+<p><a href="/auth/facebook">Login with Facebook</a></p>
+<p>Pas de compte? Créer un compte <a href="/signup">ici</a></p>
+
+
+

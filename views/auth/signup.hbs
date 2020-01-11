@@ -1,0 +1,49 @@
+<h3>S'INSCRIRE AVEC UN EMAIL</h3>
+<form action="/signup" method="POST">
+  <div>
+    <label>Prenom:
+        <input type="text" name="firstname">
+    </label>
+  </div>
+
+
+  <div>
+    <label>NOM:
+        <input type="text" name="lastname">
+    </label>
+  </div>
+
+<div>
+  <label>Username
+      <input type="text" name="username">
+  </label>
+</div>
+
+
+  <div>
+    <label>Mot de passe:
+        <input type="password" name="password">
+    </label>
+  </div>
+
+  <div>
+    <label>Adresse:
+        <input type="text" name="street">
+        <input type="text" name="zipcode">
+        <input type="text" name="city">
+        <input type="text" name="country">
+    </label>
+  </div>
+   
+  <div>
+    <label for="phoneNumber">Telephone:
+        <input type="text" name="phonenumber">
+    </label>
+  </div>
+
+<button>S'inscrire</button>
+</form>
+
+{{#if errorMessage}}
+  <div class="error-message">{{errorMessage}}</div>
+  {{/if}}

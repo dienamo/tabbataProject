@@ -1,0 +1,19 @@
+<header class="catch-phrase">
+  <h1>ESSAYEZ AVANT D'ACHETER</h1>
+  <h3>Choisissez · Essayez · Achetez</h3>
+</header>
+
+<div id="search-bar">
+  <form action="/result" method="post">
+    <input type="text" name="name" placeholder="Catégorie, produit, référence...">
+  </form>
+</div>
+
+<section id="list-of-items">
+  {{#each brands}}
+    <a href="/brand/{{id}}"><img src="{{imgPath}}" alt=""></a>
+  {{/each}}
+</section>
+
+<h1>TABBATA</h1>
+<p>Welcome to {{title}}</p>
