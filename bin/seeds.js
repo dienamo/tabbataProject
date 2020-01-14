@@ -235,14 +235,14 @@ const data = [
   {
     name : "DOUDOUNE EDOUARD",
     type : "Doudoune",
-    description : "Toile de coton technique. Matière déperlante. Coupe droite. Matière très chaude. Coloris spécialement développé pour A.P.C. Fermeture à glissière double sens. Capuche cousue au niveau de l'encolure. Longueur trois-quarts. Poches passepoilées sur les côtés. Une poche intérieure. Manches montées. Doublure matelassée.",
+    description : "Toile de coton technique. Matière déperlante. Coupe droite. Matière très chaude. Coloris spécialement développé pour APC. Fermeture à glissière double sens. Capuche cousue au niveau de l'encolure. Longueur trois-quarts. Poches passepoilées sur les côtés. Une poche intérieure. Manches montées. Doublure matelassée.",
     reference : "",
     size : "1",
     sex : "H",
     imgPath : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740274/TABBATA/Image_apc/doudoune_edouard_ffgbhb.png",
     brand :  
       {
-        "name" : "A.P.C",
+        "name" : "APC",
         "imgPath" : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_apc_wlcb89.jpg",
       },
     color : "",
@@ -260,7 +260,7 @@ const data = [
     imgPath : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740274/TABBATA/Image_apc/Blouson_ernest_mgdan9.png",
     brand :  
       {
-        "name" : "A.P.C",
+        "name" : "APC",
         "imgPath" : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_apc_wlcb89.jpg",
       },
     color : "",
@@ -271,14 +271,14 @@ const data = [
   {
     name : "BLOUSON GRÉGOIRE",
     type : "Veste",
-    description : "Twill technique. Tissu italien. Matière déperlante. Col teddy. Fermeture zippée. Poches raglan à larges passepoils. Col, poignets et taille resserrés par un bord-côtes élastiqué tricoté fantaisie. Petite poche plaquée sur le bras gauche. Fermeture zippée. Poche intérieure plaquée. Doublure ton sur ton. Fonds de poches coton. Zip A.P.C.",
+    description : "Twill technique. Tissu italien. Matière déperlante. Col teddy. Fermeture zippée. Poches raglan à larges passepoils. Col, poignets et taille resserrés par un bord-côtes élastiqué tricoté fantaisie. Petite poche plaquée sur le bras gauche. Fermeture zippée. Poche intérieure plaquée. Doublure ton sur ton. Fonds de poches coton. Zip APC.",
     reference : "",
     size : "1",
     sex : "H",
     imgPath : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740274/TABBATA/Image_apc/blouson_gregoire_lsaqpn.png",
     brand :  
       {
-        "name" : "A.P.C",
+        "name" : "APC",
         "imgPath" : "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_apc_wlcb89.jpg",
       },
     color : "",

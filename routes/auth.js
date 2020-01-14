@@ -1,7 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 const passport = require("passport");
-
+const nodemailer = require('nodemailer');
 const User = require("../models/user");
 
 
@@ -53,6 +53,37 @@ router.post('/signup' , (req , res , next) => {
       country : country,
     }) 
     .then(user => {
+    const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+    user: 'moustaphadiena@gmail.com',
+    pass: process.env.pass
+    }
+    });
+    const mailOptions = {
+      from: 'moustaphadiena@gmail.com',
+      to: user.username,
+      subject: 'Votre compte client Tabbata.com a été créé.',
+      text: `Bienvenue ${user.firstname},
+
+      Nous vous confirmons la création de votre compte client sur Tabbata.com.
+      Voici l’identifiant vous permettant d’accéder à votre espace personnel :
+      
+      Votre identifiant : 
+    
+      Vous bénéficiez désormais d’un espace personnel sur notre site qui vous permettra de suivre vos commandes
+      
+      Nous vous conseillons de conserver cet email.
+      A bientôt sur Tabbata.com
+      L'équipe Tabbata`
+    };
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
       res.redirect('/')
     })
     .catch(err => next(err))

@@ -107,8 +107,8 @@ passport.use(new LocalStrategy(
 passport.use(
   new GoogleStrategy(
     {
-      clientID: googleclientID,
-      clientSecret: googleclientSecret, 
+      clientID: process.env.googleclientID,
+      clientSecret: process.env.googleclientSecret, 
       callbackURL: "/auth/google/callback"
     },
     (accessToken, refreshToken, profile, done) => {
@@ -138,8 +138,8 @@ passport.use(
 //SE CONNECTER AVEC FACEBOOK
 
 passport.use(new FacebookStrategy({
-  clientID: fbclientID,
-  clientSecret: fbclientSecret,
+  clientID: process.env.fbclientID,
+  clientSecret: process.env.fbclientSecret,
   callbackURL: "/auth/facebook/callback"
 },
 (accessToken, refreshToken, profile, done) => {
@@ -174,5 +174,12 @@ app.use('/', router);
 
 const brandRouter = require("./routes/brand");
 app.use('/', brandRouter);
+
+const searchRouter = require("./routes/search");
+app.use('/', searchRouter);
+
+const orderRouter = require("./routes/order");
+app.use('/', orderRouter);
+
 
 module.exports = app;
