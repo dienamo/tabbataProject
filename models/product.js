@@ -12,7 +12,9 @@ const productSchema = new Schema ({
   brand : {type : Schema.Types.ObjectId, ref: 'Brand'},
   color : {type: String},
   washing : {type: String, enum: ['delicate', 'normal', 'whool'] },
-  price : {type : Number , required : true}
+  price : {type : Number , required : true},
+  store : [{type : Schema.Types.ObjectId, ref: 'Store'}]
+  //store : {type:  Schema.Types.ObjectId, ref: 'Store'}
 })
 
 const Product = mongoose.model('Product' , productSchema);

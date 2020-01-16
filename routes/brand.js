@@ -19,7 +19,6 @@ router.get('/brand/:id' , (req , res , next) => {
 router.get('/brand/:id/product-details' , (req, res, next) => {
   Product.findById(req.params.id)
   .then(product => {
-    console.log(product)
     res.render('brand/product-details' , {product})
   })
 })

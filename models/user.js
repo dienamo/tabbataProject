@@ -8,6 +8,7 @@ const userSchema = new Schema ({
   username : {type : String },
   imgPath : {type : String , default : 'http://clipart-library.com/images/ki85rq5kT.gif'},
   phonenumber : {type: String},
+  basket : {type : Schema.Types.ObjectId, ref: 'Product'},
   address : {
     street : String,
     zipcode : String,

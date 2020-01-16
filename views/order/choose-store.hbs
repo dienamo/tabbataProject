@@ -17,32 +17,50 @@
     <script>
 
       function initMap() {
-        var myLatLng = {lat: 48.8566, lng: 2.3522};
-        var zara = {lat: 48.8531, lng: 2.3328};
-        var ironhack = {lat: 48.852661, lng: 2.388536};
-        var image = '../images/tabbatalogo.png'
+        const myLatLng = {lat: 48.8566, lng: 2.3522};
+        const zara = {lat: 48.8531, lng: 2.3328};
+        const ironhack = {lat: 48.852661, lng: 2.388536};
+        const image = '../images/tabbatalogo.png'
 
-        var map = new google.maps.Map(document.getElementById('map'), {
+        const map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: myLatLng
         });
+    
+        const zaraContentString = 'it works!'
+        const ironhackContentString = 'it works!'
 
-        var marker = new google.maps.Marker({
+        const zaraInfowindow = new google.maps.InfoWindow({
+          content: zaraContentString
+        });
+
+        const ironhackInfowindow = new google.maps.InfoWindow({
+          content: ironhackContentString
+        });
+
+        var ironhackMarker = new google.maps.Marker({
           position: ironhack,
           map: map,
           icon: image,
           title: 'Hello World!'
         });
-        var marker = new google.maps.Marker({
+        var zaraMarker = new google.maps.Marker({
           position: zara,
           map: map,
           icon: image,
           title: 'Hello World!'
         });
+        zaraMarker.addListener('click', function() {
+          zaraInfowindow.open(map, zaraMarker);
+        });
+        ironhackMarker.addListener('click', function() {
+          ironhackInfowindow.open(map, ironhackMarker);
+        });
       }
+
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimaPGm6mKYl3JA8eIcxtV1a1_gKBQNtE
+&callback=initMap">
     </script>
   </body>
 </html>

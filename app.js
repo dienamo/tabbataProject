@@ -56,7 +56,7 @@ app.use(flash());
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Tabbata - Venez Essayez..';
 
 app.use(session({
   secret: "our-passport-local-strategy-app",
@@ -178,7 +178,7 @@ app.use('/', brandRouter);
 const searchRouter = require("./routes/search");
 app.use('/', searchRouter);
 
-const orderRouter = require("./routes/order");
+const orderRouter = require("./routes/product-details");
 app.use('/', orderRouter);
 
 

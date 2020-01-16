@@ -1,6 +1,12 @@
 {{#each items}}
-  <p>{{name}}</p>
-  <p>{{descrption}}</p>
 
-  <a href="/brand/{{id}}/product-details"><img src="{{imgPath}}" alt=""></a>
+<div id="all">
+  <a href="/brand/{{id}}/product-details"><img id="image" src="{{imgPath}}" alt=""></a>
+
+  <div id="description">
+    <p id="name">{{name}}</p>
+    <span id="sex">Sexe : {{sex}}</span>
+    <p id="price">Price : {{price}} €</p>
+  </div>
+</div>
 {{/each}}
