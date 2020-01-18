@@ -16,7 +16,6 @@ router.post('/book/orders' , (req , res , next) => {
   const time = req.body.time;
   Order.find()
   .then(orders => {
-    console.log(orders)
     const updatedOrders = orders.map(order => {
       const updatedOrder = order
       updatedOrder.date = new Date(date);

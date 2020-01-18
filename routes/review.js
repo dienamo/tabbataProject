@@ -8,13 +8,18 @@ const User = require('../models/user');
 const Order = require('../models/order');
 
 router.get('/review' , (req, res, next) => {
-  if (!req.user) {
-    res.redirect('/signup'); // not logged-in
-    return;
-  }
   Order.find()
+  .populate('user')
+  .populate('product')
   .then(orders => {
-    res.render('order/review', {orders});
+    const userOrders = []
+    orders.forEach(order => {
+      if(order.user.id === req.user.id) {
+        userOrders.push(order)
+      }
+    })
+    console.log(userOrders)
+    res.render('order/review', {userOrders})
   })
   .catch(err => next(err));
 });

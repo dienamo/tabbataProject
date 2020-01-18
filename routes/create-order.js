@@ -14,8 +14,8 @@ router.post('/product-details/:id/choose-store/:name/create-order' , (req, res, 
   }
     const product = req.params.id;
     const store = req.params.name;
-    console.log('le store est..............' ,store);
     Order.create({
+      user : req.user,
       product : product,
       store : store,
     })

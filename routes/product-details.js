@@ -13,7 +13,7 @@ router.get('/product-details/:id/choose-store', (req, res, next) => {
   }
     Product.findById(req.params.id)
     .then(product => {
-      Store.findById(product.store[0])
+      Store.findById(product.store)
       .then(stores => {
         res.render('order/choose-store' , {product , stores});
       }).catch(err => next(err));

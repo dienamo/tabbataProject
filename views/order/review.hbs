@@ -1,7 +1,8 @@
-<h3>Details de vos commande</h3>
+<h3>Details de vos commandes</h3>
 
-{{#each orders}}
+{{#each userOrders}}
 <p>{{id}}</p>
+<img src="{{product.imgPath}}" alt="">
 <form action="/{{id}}/delete" method="POST">
   <button type="submit">Supprimer</button>
 </form>
