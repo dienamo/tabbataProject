@@ -8,6 +8,10 @@ const User = require('../models/user');
 const Order = require('../models/order');
 
 router.post('/product-details/:id/choose-store/:name/create-order' , (req, res, next) => {
+  if (!req.user) {
+    res.redirect('/signup'); // not logged-in
+    return;
+  }
     const product = req.params.id;
     const store = req.params.name;
     console.log('le store est..............' ,store);

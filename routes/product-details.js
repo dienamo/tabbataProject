@@ -7,12 +7,14 @@ const Store = require('../models/store');
 
 
 router.get('/product-details/:id/choose-store', (req, res, next) => {
+  if (!req.user) {
+    res.redirect('/signup'); // not logged-in
+    return;
+  }
     Product.findById(req.params.id)
     .then(product => {
       Store.findById(product.store[0])
       .then(stores => {
-        console.log(product)
-        console.log(stores)
         res.render('order/choose-store' , {product , stores});
       }).catch(err => next(err));
     }).catch(err => next(err));

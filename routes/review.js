@@ -8,6 +8,10 @@ const User = require('../models/user');
 const Order = require('../models/order');
 
 router.get('/review' , (req, res, next) => {
+  if (!req.user) {
+    res.redirect('/signup'); // not logged-in
+    return;
+  }
   Order.find()
   .then(orders => {
     res.render('order/review', {orders});
