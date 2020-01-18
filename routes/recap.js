@@ -8,6 +8,10 @@ const User = require('../models/user');
 const Order = require('../models/order')
 
 router.post('/book/orders' , (req , res , next) => {
+  if (!req.user) {
+    res.redirect('/signup'); // not logged-in
+    return;
+  }
   const date = req.body.date;
   const time = req.body.time;
   Order.find()
