@@ -181,5 +181,10 @@ app.use('/', searchRouter);
 const orderRouter = require("./routes/product-details");
 app.use('/', orderRouter);
 
+const bookRouter = require("./routes/book");
+app.use('/', bookRouter);
+
+const reviewRouter = require("./routes/review");
+app.use('/', reviewRouter);
 
 module.exports = app;

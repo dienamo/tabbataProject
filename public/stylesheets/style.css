@@ -98,6 +98,28 @@ a {
   font-size: 20px;
 }
 
+/*
+###    ##     ## ######## ##     ##         ##        #######   ######   #### ##    ## 
+## ##   ##     ##    ##    ##     ##         ##       ##     ## ##    ##   ##  ###   ## 
+##   ##  ##     ##    ##    ##     ##         ##       ##     ## ##         ##  ####  ## 
+##     ## ##     ##    ##    ######### ####### ##       ##     ## ##   ####  ##  ## ## ## 
+######### ##     ##    ##    ##     ##         ##       ##     ## ##    ##   ##  ##  #### 
+##     ## ##     ##    ##    ##     ##         ##       ##     ## ##    ##   ##  ##   ### 
+##     ##  #######     ##    ##     ##         ########  #######   ######   #### ##    ##  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 ########  ########     ###    ##    ## ########                #### ##    ## ########  ######## ##     ## 
@@ -109,7 +131,7 @@ a {
 ########  ##     ## ##     ## ##    ## ########                #### ##    ## ########  ######## ##     ## 
  */
 
- #all {
+ #brand-index-all {
   display: flex;
   border:solid;
   border-color: #2D525E;
@@ -117,20 +139,20 @@ a {
   margin-bottom: 7px;
 }
 
-a {
+#brand-index-a {
   margin-bottom: -3px;
 }
 
-#image {
+#brand-index-image {
   border-radius: 7px;
 }
 
-#description {
+#brand-index-description {
   background-color: white ;
   border-radius: 10px;
 }
 
-#name {
+#brand-index-name {
   font-size: 18px;
   color: #2D525E;
   width:120px;
@@ -140,7 +162,7 @@ a {
 }
 
 
-#price {
+#brand-index-price {
   margin: 0px;
   color: #2D525E;
   width:120px;
@@ -149,7 +171,7 @@ a {
   
 }
 
-#sex {  
+#brand-index-sex {  
   margin: 0px;
   color: #2D525E;
   margin-bottom: 0px;
@@ -165,10 +187,86 @@ a {
 ##     ## ##    ##  ##     ## ##   ### ##     ##     ##         ##        ##    ##  ##     ## ##     ## ##     ## ##    ##    ##            ##     ## ##          ##    ##     ##  ##  ##       ##    ## 
 ########  ##     ## ##     ## ##    ## ########     ##          ##        ##     ##  #######  ########   #######   ######     ##            ########  ########    ##    ##     ## #### ########  ######   */
 
+#product-details-reference {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+  font-size: 9px;
+  margin-bottom:4px;
+}
 
-#try-it {
-  color: black;
-  width: 155px;
+
+#product-details-name {
+  color: #2D525E;
+  font-weight: bolder;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+#product-details-size {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+}
+
+#product-details-details {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+  font-weight: bold;
+}
+
+#product-details-sex {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+}
+
+#product-details-description {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+}
+
+#product-details-color {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+}
+
+#product-details-washing {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+}
+
+#product-details-price {
+  margin-left: 18px;
+  margin-right:18px;
+  color: #2D525E;
+  font-weight: bold;
+  font-size:16px;
+}
+
+/* #product-details-footer-try {
+  position: center;
+} */
+
+#product-details-try-it {
+  color: white;
+  width: 307px;
+  background-color: #2D525E;
+  border-radius: 10px;
+  margin-left: 34px;
+  margin-right:18px;
+  padding: 12px;
+  text-align: center;
+}
+
+#product-details-footer {
+  height:37px;
 }
 
 
