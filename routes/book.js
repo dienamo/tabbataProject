@@ -7,22 +7,10 @@ const Store = require('../models/store')
 const User = require('../models/user');
 const Order = require('../models/order')
 
-router.get('/product-details/:id/choose-store/:name/book' , (req, res, next) => {
-    const product = req.params.id;
-    const store = req.params.name;
-    console.log('le store est..............' ,store)
-    Order.create({
-      product : product,
-      store : store,
-    })
-    .then(order => {
-      Order.find()
-      .then(orders => {
-        res.render('order/book' , {orders})
-      })
-    })
-    .catch(err => next(err))
-  })
+router.get('/book/:orders' , (req, res, next) => {
+  const product = req.params.id;
+  const store = req.params.name;
+  res.render('order/book')
+})
 
-
-  module.exports = router
+module.exports = router

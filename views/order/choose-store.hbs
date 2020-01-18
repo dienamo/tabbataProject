@@ -1,4 +1,7 @@
 {{product.name}}
 <h3>Choisir votre boutique</h3>
-<a href="/product-details/{{product.id}}/choose-store/{{stores.name}}/review"><p>{{stores.name}}</p></a> 
+<form action="/product-details/{{product.id}}/choose-store/{{stores.name}}/create-order" method="POST">
+  <button type="submit">{{stores.name}}</button>
+</form>
+
 <p>{{stores.address}}</p>

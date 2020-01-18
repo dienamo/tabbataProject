@@ -7,7 +7,12 @@ const Store = require('../models/store')
 const User = require('../models/user');
 const Order = require('../models/order')
 
-
-
+router.get('/review' , (req, res, next) => {
+  Order.find()
+  .then(orders => {
+    res.render('order/review', {orders})
+  }) 
+  .catch(err => next(err))
+})
 
 module.exports = router
