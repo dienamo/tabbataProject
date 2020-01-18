@@ -74,10 +74,10 @@ a {
   -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding-left: 44px;
 }
 
 #search-bar input::placeholder {
-  text-indent: 45px;
   color: #E1C28F;
 }
 
@@ -90,13 +90,6 @@ a {
   font-size : 20px;
 }
 
-#id-form {
-  font-size : 20px;
-}
-
-#button-login {
-  font-size: 20px;
-}
 
 /*
 ###    ##     ## ######## ##     ##         ##        #######   ######   #### ##    ## 
@@ -108,16 +101,145 @@ a {
 ##     ##  #######     ##    ##     ##         ########  #######   ######   #### ##    ##  */
 
 
+#login-email-form {
+  color: #2D525E;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#login-password-form {
+  color: #2D525E;
+  margin-left: 54px;
+}
+
+#login-button-login-parent {
+  text-align: center;
+}
+
+#login-button-login {
+  color: white;
+  width: 100px;
+  background-color: #2D525E;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 9px;
+}
 
 
+#p-login-google {
+  text-align: center;
+}
+
+#login-google {
+  width : 120px;
+}
+#p-login-facebook {
+  text-align: center;
+}
+
+#login-facebook {
+  width : 128px;
+}
+
+#p-no-account {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2D525E;
+  font-weight: bold;
+}
 
 
+#login-final-image {
+  width: 100%;
+  height: 24.5em;
+  background-image: url(../images/blouse-login.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin-top: 1px;
+}
 
 
+/* 
+###    ##     ## ######## ##     ##                ######  ####  ######   ##    ##    ##     ## ########  
+## ##   ##     ##    ##    ##     ##               ##    ##  ##  ##    ##  ###   ##    ##     ## ##     ## 
+##   ##  ##     ##    ##    ##     ##               ##        ##  ##        ####  ##    ##     ## ##     ## 
+##     ## ##     ##    ##    #########    #######     ######   ##  ##   #### ## ## ##    ##     ## ########  
+######### ##     ##    ##    ##     ##                     ##  ##  ##    ##  ##  ####    ##     ## ##        
+##     ## ##     ##    ##    ##     ##               ##    ##  ##  ##    ##  ##   ###    ##     ## ##        
+##     ##  #######     ##    ##     ##                ######  ####  ######   ##    ##     #######  ##   */
+
+#signup-all {
+  border: solid;
+  /* border-radius: 20px; */
+  border-color: #2D525E;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+#signup-signup-email-parent {
+  text-align: center;
+}
+
+#signup-signup-email {
+  color: #2D525E;
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+#signup-name {
+  margin-left: 68px;
+  margin-top: 10px;
+  color: #2D525E;
+}
+
+#signup-lastName {
+  margin-left: 68px;
+  color: #2D525E;
+}
+
+#user-username {
+  margin-left: 68px;
+  color: #2D525E;
+}
+
+#signup-password {
+  margin-left: 68px;
+  color: #2D525E;
+}
+
+#signup-phoneNumber {
+  margin-left: 68px;
+  color: #2D525E;
+}
 
 
+#signup-button-subscribe-parent {
+  text-align: center;
+  margin-bottom: 48px;
+}
 
+#signup-button-subscribe {
+  color: white;
+  width: 100px;
+  background-color: #2D525E;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 9px;
+}
 
+#signup-final-image {
+  width: 100%;
+  height: 23.5em;
+  background-image: url(../images/blouse-login.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  margin-top: 1px;
+}
 
 
 

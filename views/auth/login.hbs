@@ -1,11 +1,11 @@
 <form action="/login" method="POST" id="log-in-form">
-  <div>
-    <label for="username" id='id-form'>email:</label>
+  <div id='login-email-form'>
+    <label for="username">Email :</label>
     <input type="text" name="username">
   </div>
   
-  <div>
-    <label for="password" id='password-form'>Password:</label>
+  <div id='login-password-form'>
+    <label for="password" >Mot de passe :</label>
     <input type="password" name="password">
   </div>
   
@@ -13,13 +13,16 @@
   <div class="error-message">{{errorMessage}}</div>
   {{/if}}
   
-  <div>
-    <button id="button-login">Log in</button>
+  <div id="login-button-login-parent">
+    <button id="login-button-login">Log in</button>
   </div>
 </form>
-<p><a href="/auth/google">Login With Google</a></p>
-<p><a href="/auth/facebook">Login with Facebook</a></p>
-<p>Pas de compte? Créer un compte <a href="/signup">ici</a></p>
+<p id="p-login-google"><a href="/auth/google"><img src="../images/btn_google_signin_dark_pressed_web@2x.png" alt="Sign in with google" id="login-google"> </a></p>
+<p id="p-login-facebook"><a href="/auth/facebook"><img src="../images/login-with-facebook.png" alt="Login with facebook" id="login-facebook"></a></p>
+<p id="p-no-account">Pas de compte? Créer un compte <a href="/signup">ici</a></p>
+
+
+<div id="login-final-image"></div>
 
 
 
