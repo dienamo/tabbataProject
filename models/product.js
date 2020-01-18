@@ -15,7 +15,7 @@ const productSchema = new Schema ({
   price : {type : Number , required : true},
   store : [{type : Schema.Types.ObjectId, ref: 'Store'}]
   //store : {type:  Schema.Types.ObjectId, ref: 'Store'}
-})
+});
 
 const Product = mongoose.model('Product' , productSchema);
 
