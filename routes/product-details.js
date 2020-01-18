@@ -11,7 +11,6 @@ router.get('/product-details/:id/choose-store', (req, res, next) => {
     .then(product => {
       Store.findById(product.store[0])
       .then(stores => {
-        console.log(stores)
         res.render('order/choose-store' , {product , stores});
       }).catch(err => next(err))
     }).catch(err => next(err))

@@ -1,7 +1,8 @@
 <h3>Details de vos commande</h3>
-{{#each}}
-<p>{{orders}}</p>
-<form action="/{{orders}}/delete" method="POST">
+
+{{#each orders}}
+<p>{{id}}</p>
+<form action="/{{id}}/delete" method="POST">
   <button type="submit">Supprimer</button>
 </form>
 {{/each}}

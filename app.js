@@ -181,7 +181,7 @@ app.use('/', searchRouter);
 const orderRouter = require("./routes/product-details");
 app.use('/', orderRouter);
 
-const bookRouter = require("./routes/book");
+const bookRouter = require("./routes/recap");
 app.use('/', bookRouter);
 
 const createRouter = require("./routes/create-order");
@@ -189,5 +189,8 @@ app.use('/', createRouter);
 
 const reviewRouter = require("./routes/review");
 app.use('/', reviewRouter);
+
+const deleteRouter = require("./routes/delete");
+app.use('/', deleteRouter);
 
 module.exports = app;

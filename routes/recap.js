@@ -10,7 +10,7 @@ const Order = require('../models/order')
 router.get('/book/:orders' , (req, res, next) => {
   const product = req.params.id;
   const store = req.params.name;
-  res.render('order/book')
+  res.render('order/recap')
 })
 
 module.exports = router
