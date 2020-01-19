@@ -7,7 +7,7 @@ const orderSchema = new Schema ([{
   product : {type : Schema.Types.ObjectId, ref: 'Product'},
   date : {type : String},
   time : {type : String}
-}])
+}]);
 
 const Order = mongoose.model('Order' , orderSchema);
 
