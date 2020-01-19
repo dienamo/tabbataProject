@@ -1,9 +1,13 @@
-<h2>Recapitulatif de la commande</h2>
+<div id="order-recap-title">Recapitulatif de la réservation</div>
 
 {{#each updatedOrders}}
-  <p>{{store}}</p>
+  <p id="order-recap-store">{{store}}</p>
 {{/each}}
 
-{{t0}}
-{{d0}}
-<div><a href="/">Retour à l'accueil</a></div>
+<div id="order-recap-time">Heure de réservation : {{t0}}</div>
+<div id="order-recap-date">Date de réservation : {{d0}}</div>
+
+<div id="order-recap-home-and-reservation"> 
+  <div id="order-recap-home"><a href="/">Retour à l'accueil</a></div>
+  <div id="order-recap-my-reservation"><a href="/">Voir mes réservation</a></div>
+</div>

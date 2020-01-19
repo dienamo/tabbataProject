@@ -6,7 +6,7 @@ const orderSchema = new Schema ([{
   product : {type : String},
   date : {type : String},
   time : {type : String}
-}])
+}]);
 
 const Order = mongoose.model('Order' , orderSchema);
 

@@ -447,4 +447,175 @@ a {
 }
 
 
+/* 
+#######  ########  ########  ######## ########          ########  ######## ##     ## #### ######## ##      ## 
+##     ## ##     ## ##     ## ##       ##     ##         ##     ## ##       ##     ##  ##  ##       ##  ##  ## 
+##     ## ##     ## ##     ## ##       ##     ##         ##     ## ##       ##     ##  ##  ##       ##  ##  ## 
+##     ## ########  ##     ## ######   ########  ####### ########  ######   ##     ##  ##  ######   ##  ##  ## 
+##     ## ##   ##   ##     ## ##       ##   ##           ##   ##   ##        ##   ##   ##  ##       ##  ##  ## 
+##     ## ##    ##  ##     ## ##       ##    ##          ##    ##  ##         ## ##    ##  ##       ##  ##  ## 
+#######  ##     ## ########  ######## ##     ##         ##     ## ########    ###    #### ########  ###  ###    */
+
+
+#order-review-details {
+  margin-left: 25px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: #2D525E;
+  font-size:20px;
+}
+
+#order-review-form {
+  display: flex;
+}
+
+#order-review-id {
+  margin-left: 25px;
+  margin-top: 18px;
+}
+
+#order-review-button-supp {
+  margin-top: 17px;
+  /* margin-left: 48px; */
+  transform: translateX(60%);
+  border: solid;
+  border-color: #2D525E;
+  background-color: #2D525E;
+  color: white;
+  border-radius: 5px;
+}
+
+#order-review-make-choice {
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  color:black;
+}
+
+#order-review-date {
+  margin-left: 25px;
+  font-size: 13px;
+}
+
+#order-review-date-choice {
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#order-review-hours {
+  font-size: 13px;
+}
+
+#order-review-hours-choice {
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#order-review-reserve-choose {
+  display: flex;
+  margin-top: 40px;
+}
+
+#order-review-reserve {
+  border: solid;
+  padding: 5px;
+  border-color: #2D525E;
+  background-color: #2D525E;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 25px;
+  margin-right:29px;
+  font-weight: bold;
+}
+
+#order-review-choose {
+  border: solid;
+  padding: 5px;
+  border-color: #2D525E;
+  background-color: white;
+  color: #2D525E;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 160px;
+  margin-right: 25px;
+  font-weight: bold;
+  width: 167px;
+}
+
+/* 
+#######  ########  ########  ######## ########          ########  ########  ######     ###    ########  
+##     ## ##     ## ##     ## ##       ##     ##         ##     ## ##       ##    ##   ## ##   ##     ## 
+##     ## ##     ## ##     ## ##       ##     ##         ##     ## ##       ##        ##   ##  ##     ## 
+##     ## ########  ##     ## ######   ########  ####### ########  ######   ##       ##     ## ########  
+##     ## ##   ##   ##     ## ##       ##   ##           ##   ##   ##       ##       ######### ##        
+##     ## ##    ##  ##     ## ##       ##    ##          ##    ##  ##       ##    ## ##     ## ##        
+ #######  ##     ## ########  ######## ##     ##         ##     ## ########  ######  ##     ## ##         */
+
+#order-recap-title {
+  margin-left: 25px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: #2D525E;
+  font-size:20px;
+}
+
+#order-recap-store {
+  margin-left: 25px
+}
+
+#order-recap-time {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+#order-recap-date {
+  margin-left: 25px;
+}
+
+#order-recap-home-and-reservation {
+  display: flex;
+  margin-top: 50px;
+}
+
+#order-recap-home {
+  border: solid;
+  padding: 5px;
+  border-color: #2D525E;
+  background-color: #2D525E;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 25px;
+  margin-right:29px;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 130px;
+  text-decoration: none;
+}
+
+#order-recap-my-reservation {
+  border: solid;
+  padding: 5px;
+  border-color: #2D525E;
+  background-color: white;
+  color: #2D525E;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 25px;
+  margin-right:29px;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 155px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */
