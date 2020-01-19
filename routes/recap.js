@@ -15,6 +15,7 @@ router.post('/book/orders' , (req , res , next) => {
   const date = req.body.date;
   const time = req.body.time;
   Order.find()
+  .populate('product')
   .then(orders => {
     const updatedOrders = orders.map(order => {
       const updatedOrder = order
@@ -24,6 +25,7 @@ router.post('/book/orders' , (req , res , next) => {
     })
     res.render('order/recap' , {
       updatedOrders,
+      username : req.user.firstname,
       t0: updatedOrders[0].time,
       d0: updatedOrders[0].date
     })

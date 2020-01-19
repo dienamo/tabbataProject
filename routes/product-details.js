@@ -12,11 +12,11 @@ router.get('/product-details/:id/choose-store', (req, res, next) => {
     return;
   }
     Product.findById(req.params.id)
+    .populate('store')
     .then(product => {
-      Store.findById(product.store)
-      .then(stores => {
-        res.render('order/choose-store' , {product , stores});
-      }).catch(err => next(err));
+      const stores = product.store[0]
+      console.log(product)
+      res.render('order/choose-store' , {product , stores});
     }).catch(err => next(err));
 });
 

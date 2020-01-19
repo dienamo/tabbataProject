@@ -84,7 +84,7 @@ router.post('/signup' , (req , res , next) => {
         console.log('Email sent: ' + info.response);
       }
     });
-      res.redirect('/')
+      res.redirect('/login')
     })
     .catch(err => next(err))
     
