@@ -6,6 +6,7 @@ const Product = require('../models/product')
 const Store = require('../models/store')
 const User = require('../models/user');
 const Order = require('../models/order')
+const nodemailer = require('nodemailer');
 
 router.post('/book/orders' , (req , res , next) => {
   if (!req.user) {
@@ -19,10 +20,49 @@ router.post('/book/orders' , (req , res , next) => {
   .then(orders => {
     const updatedOrders = orders.map(order => {
       const updatedOrder = order
-      updatedOrder.date = new Date(date);
+      updatedOrder.date = date;
       updatedOrder.time = time;
       return updatedOrder
     })
+    console.log(orders)
+    const listeEmail = []
+    orders.forEach(order => {
+      order = order.product.name
+      listeEmail.push(order)
+    })
+    console.log(listeEmail)
+    /*NODEMAILER START*/
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+      user: 'moustaphadiena@gmail.com',
+      pass: process.env.pass
+      }
+      });
+      const mailOptions = {
+        from: 'moustaphadiena@gmail.com',
+        to: req.user.username,
+        subject: 'Votre essayage a bien été programmé.',
+        html: `<h1>Bonjour ${req.user.firstname}</h1>,
+  
+        Nous vous confirmons la programmation de votre essayage
+        
+        Votre commande : 
+
+        Le ${date} à ${time}
+        
+        Nous vous conseillons de conserver cet email.
+        A bientôt sur Tabbata.com
+        L'équipe Tabbata`
+      };
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
+      /*NODEMAILER END*/
     res.render('order/recap' , {
       updatedOrders,
       username : req.user.firstname,

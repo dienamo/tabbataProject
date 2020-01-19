@@ -12,7 +12,6 @@ router.get('/review' , (req, res, next) => {
   .populate('user')
   .populate('product')
   .then(orders => {
-    console.log(orders)
     const userOrders = []
     orders.forEach(order => {
       if(order.user.id === req.user.id) {

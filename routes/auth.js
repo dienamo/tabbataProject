@@ -69,7 +69,7 @@ router.post('/signup' , (req , res , next) => {
       Nous vous confirmons la création de votre compte client sur Tabbata.com.
       Voici l’identifiant vous permettant d’accéder à votre espace personnel :
       
-      Votre identifiant : 
+      Votre identifiant : ${user.username}
     
       Vous bénéficiez désormais d’un espace personnel sur notre site qui vous permettra de suivre vos commandes
       

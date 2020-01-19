@@ -15,7 +15,6 @@ router.get('/product-details/:id/choose-store', (req, res, next) => {
     .populate('store')
     .then(product => {
       const stores = product.store[0]
-      console.log(product)
       res.render('order/choose-store' , {product , stores});
     }).catch(err => next(err));
 });
