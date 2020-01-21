@@ -1,29 +1,39 @@
-<p><img src="{{product.imgPath}}" alt=""></p>
 
-<p id="product-details-reference">Référence : {{product.reference}}</p>
+<div id="product-detail-card">
+  <div id="product-detail">
+    <p><img src="{{product.imgPath}}" alt="" id="product-detail-img"></p>
+  </div>
 
-<p id="product-details-name">{{product.name}}<p>
+  <div>
 
-<p id="product-details-description">{{product.description}}</p>
+    <p id="product-details-reference">Référence : {{product.reference}}</p>
 
-{{!-- <p>{{product.type}}</p> --}}
+    <p id="product-details-name">{{product.name}}<p>
 
-<p id="product-details-details">Details : </p>
+    <p id="product-details-description">{{product.description}}</p>
 
-<p id="product-details-size">Taille dispnible : {{product.size}}</p>
+    {{!-- <p>{{product.type}}</p> --}}
 
-<p id="product-details-sex">Sexe : {{product.sex}}</p>
+    <p id="product-details-details">Details : </p>
+
+    <p id="product-details-size">Taille dispnible : {{product.size}}</p>
+
+    <p id="product-details-sex">Sexe : {{product.sex}}</p>
 
 
-{{!-- <p>{{product.brand}}</p> --}}
-<p id="product-details-color">Couleurs disponibles : {{product.color}}</p>
+    {{!-- <p>{{product.brand}}</p> --}}
+    <p id="product-details-color">Couleurs disponibles : {{product.color}}</p>
 
-<p id="product-details-washing">Détails de lavage : {{product.washing}}</p>
+    <p id="product-details-washing">Détails de lavage : {{product.washing}}</p>
 
-<p id="product-details-price">Prix : {{product.price}} €</p>
+    <p id="product-details-price">Prix : {{product.price}} €</p>
 
+  </div>
+
+
+</div>  
 <div id="product-details-footer-try">
-<footer id="product-details-footer">
-<a href="/product-details/{{product.id}}/choose-store"><h3 id="product-details-try-it">Essayez en cabine</h3></a>
-</footer>
+  <footer id="product-details-footer">
+    <a href="/product-details/{{product.id}}/choose-store"><h3 id="product-details-try-it">Essayez en cabine</h3></a>
+  </footer>
 </div>
