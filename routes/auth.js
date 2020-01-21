@@ -56,12 +56,12 @@ router.post('/signup' , (req , res , next) => {
     const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-    user: 'nicolas.zysermann@gmail.com',
+    user: 'moustaphadiena@gmail.com',
     pass: process.env.pass
     }
     });
     const mailOptions = {
-      from: 'nicolas.zysermann@gmail.com',
+      from: 'moustaphadiena@gmail.com',
       to: user.username,
       subject: 'Votre compte client Tabbata.com a été créé.',
       text: `Bienvenue ${user.firstname},
