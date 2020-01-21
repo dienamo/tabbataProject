@@ -8,6 +8,9 @@ const User = require('../models/user');
 const Order = require('../models/order');
 
 router.get('/review' , (req, res, next) => {
+  if (!req.user) {
+    res.redirect('/login')
+  }
   Order.find()
   .populate('user')
   .populate('product')

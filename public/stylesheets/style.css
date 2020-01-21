@@ -39,6 +39,7 @@ a {
   margin-bottom: 15px;
 }
 
+
 .catch-phrase {
   display: flex;
   flex-direction: column;
@@ -247,7 +248,9 @@ a {
   margin-top: 1px;
 }
 
-
+#logout {
+  width: 25px;
+}
 
 /* 
 ########  ########     ###    ##    ## ########                #### ##    ## ########  ######## ##     ## 
@@ -641,6 +644,30 @@ a {
 
   #search-bar {
     margin-top: 330px;
+  }
+
+  #logout img {
+    width: 20px;
+  }
+
+  list-of-items-parents {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #list-of-items img {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 250px;
+    /* margin-left: 50px; */
+  }
+
+  #signup-final-image {
+    height: 350px;
+  }
+  #login-final-image {
+    height: 350px;
   }
 }
 
