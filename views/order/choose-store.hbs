@@ -9,10 +9,14 @@
   <div>
     <div id="order-choose-store-shop">Choisir votre boutique :</div>
 
-    <form action="/product-details/{{product.id}}/choose-store/{{stores.name}}/create-order" method="POST">
-      <button type="submit" id="order-choose-store-button-store">{{stores.name}}</button>
-    </form>
-    <p id="order-choose-store-store-address"> Adresse : {{stores.address}}</p>
+    {{#each product.store}}
+
+      <form action="/product-details/{{../product.id}}/choose-store/{{name}}/create-order" method="POST">
+        <button type="submit" id="order-choose-store-button-store">{{name}}</button>
+      </form>
+      <p id="order-choose-store-store-address"> Adresse : {{address}}</p>
+    
+    {{/each}}
 
   </div>
 
