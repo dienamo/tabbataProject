@@ -114,7 +114,7 @@ const data = [
     brand:
     {
       "name": "Sandro",
-      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.pnghttps://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_sara_lavoine_bthk2x.png",
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
     },
     color: "",
     washing: "normal",
