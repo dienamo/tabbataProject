@@ -8,7 +8,7 @@ Product.collection.drop();
 Store.collection.drop();
 
 mongoose
-  .connect('mongodb://localhost/tabbataproject', { useNewUrlParser: true })
+  .connect(MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
