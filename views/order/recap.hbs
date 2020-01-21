@@ -1,18 +1,17 @@
-<h2>{{username}} , votre essayage a bien été programmé le {{d0}} à {{t0}} au {{place}}</h2>
+<h2 id="order-recap-title">{{username}} , votre essayage a bien été programmé le {{d0}} à {{t0}} au {{place}}</h2>
 
 {{!-- {{#each updatedOrders}}
   <img src="{{product.imgPath}}" alt="">
   <p>{{store}}</p>
 {{/each}} --}}
 
-
-<div><a href="/">Retour à l'accueil</a></div>
-
-<div id="order-recap-title">Recapitulatif de la réservation</div>
+<div id="order-recap-title">Récapitulatif de la réservation :</div>
 
 {{#each updatedOrders}}
-  <img src="{{product.imgPath}}" alt="">
-  <p id="order-recap-store">{{store}}</p>
+  <div id="order-recap-image-store">
+    <img src="{{product.imgPath}}" alt="" id="order-recap-image">
+    <p id="order-recap-store">{{store}}</p>
+  </div>
 {{/each}}
 
 <div id="order-recap-time">Heure de réservation : {{t0}}</div>

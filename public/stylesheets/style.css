@@ -3,20 +3,12 @@ img {max-width:100%;}
 
 a {text-decoration:inherit; color:inherit;}
 
-@media (min-width:900px) {
-  :root {
-    --pad:4em;
-  }
-}
-
 body {
   margin:0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #faf9f9; 
 }
 
-a {
-  color: #00B7FF; }
 
 #navigation-container {
   display : flex;
@@ -255,6 +247,7 @@ a {
 ########  ##     ## ##     ## ##    ## ########                #### ##    ## ########  ######## ##     ## 
  */
 
+
  #brand-index-all {
   display: flex;
   border:solid;
@@ -459,6 +452,13 @@ a {
 #######  ##     ## ########  ######## ##     ##         ##     ## ########    ###    #### ########  ###  ###    */
 
 
+#order-review-title {
+  color: #2D525E;
+  margin-left: 25px;
+}
+
+
+
 #order-review-details {
   margin-left: 25px;
   margin-top: 18px;
@@ -469,6 +469,23 @@ a {
 
 #order-review-form {
   display: flex;
+}
+
+#order-review-image {
+  margin-left:25px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border:solid;
+  border-color: #2D525E;
+  border-radius: 10px;
+}
+
+#order-review-product-name {
+  color: #2D525E;
+  margin-left: 47px;
+  margin-top: 60px;
+  font-weight: bold;
 }
 
 #order-review-id {
@@ -500,17 +517,17 @@ a {
 }
 
 #order-review-date-choice {
-  margin-left: 5px;
+  margin-left: 3px;
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #order-review-hours {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #order-review-hours-choice {
-  margin-left: 5px;
+  margin-left: 0px;
   margin-top: 20px;
   font-size: 13px;
 }
@@ -529,7 +546,8 @@ a {
   border-radius: 5px;
   font-size: 12px;
   margin-left: 25px;
-  margin-right:29px;
+  margin-right:27px;
+  margin-bottom:40px;
   font-weight: bold;
 }
 
@@ -564,8 +582,22 @@ a {
   font-size:20px;
 }
 
+#order-recap-image-store {
+  display: flex;
+}
+
+#order-recap-image {
+  margin-left:25px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border:solid;
+  border-color: #2D525E;
+  border-radius: 10px;
+}
+
 #order-recap-store {
-  margin-left: 25px
+  margin-left: 10px;
 }
 
 #order-recap-time {
@@ -579,7 +611,7 @@ a {
 
 #order-recap-home-and-reservation {
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #order-recap-home {
@@ -592,7 +624,8 @@ a {
   font-size: 12px;
   margin-left: 25px;
   margin-right:29px;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom:30px;
   font-weight: bold;
   width: 130px;
   text-decoration: none;
@@ -608,7 +641,8 @@ a {
   font-size: 12px;
   margin-left: 25px;
   margin-right:29px;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom:30px;
   font-weight: bold;
   width: 155px;
   text-decoration: none;

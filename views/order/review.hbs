@@ -1,21 +1,20 @@
-<h3>Bienvenue {{userInfo.firstname}}</h3>
+<h3 id="order-review-title">Bienvenue {{userInfo.firstname}},</h3>
 
-{{!-- <h3>Details de vos commandes</h3>
-
-{{#each userOrders}}
+{{!-- {{#each userOrders}}
 <p>{{id}}</p>
 <img src="{{product.imgPath}}" alt="">
 <form action="/{{id}}/delete" method="POST">
   <button type="submit">Supprimer</button>
-</form> --}}
+</form> --}} 
 
-<div id="order-review-details">Details de votre essayage : </div>
+<div id="order-review-details">Détails de votre essayage : </div>
 
 {{#each userOrders}}
 <div id="order-review-form">
-  <img src="{{product.imgPath}}" alt="">
-  <p id="order-review-id">{{id}}</p>
+  <img id="order-review-image" src="{{product.imgPath}}" alt="">
+  {{!-- <p id="order-review-id">{{id}}</p> --}}
   <form action="/{{id}}/delete" method="POST">
+    <div id="order-review-product-name">{{product.name}}</div>
     <button type="submit" id="order-review-button-supp">Supprimer</button>
   </form>
 </div>
