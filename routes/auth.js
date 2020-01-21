@@ -110,7 +110,7 @@ router.get("/auth/google", passport.authenticate("google", {
   ]
 }));
 router.get("/auth/google/callback", passport.authenticate("google", {
-  successRedirect: "/private",
+  successRedirect: "/",
   failureRedirect: "/login"
 }));
 
@@ -119,7 +119,7 @@ router.get("/auth/google/callback", passport.authenticate("google", {
 router.get('/auth/facebook', passport.authenticate('facebook'));
 
 router.get('/auth/facebook/callback', passport.authenticate('facebook', { 
-    successRedirect: '/private',
+    successRedirect: '/',
     failureRedirect: '/login' }));
 
 router.get("/logout", (req, res) => {
