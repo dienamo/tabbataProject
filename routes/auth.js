@@ -27,14 +27,14 @@ router.post('/signup' , (req , res , next) => {
   const country = req.body.country;
 
   if (firstname === "" || lastname === "" || username === "") {
-    res.render('auth/signup' , {errorMessage: "Veuillez entrer un nom, prénom, adresse mail"})
+    res.render('auth/signup' , {errorMessage: "Veuillez entrer un nom, prénom, adresse mail"});
     return;
   }
 
   User.findOne({username})
   .then(user => {
     if (user) {
-      res.render('auth/signup' , {errorMessage: "Un utilisateur est déjà enregistré avec cette email"})
+      res.render('auth/signup' , {errorMessage: "Un utilisateur est déjà enregistré avec cette email"});
       return;
     }
 
@@ -84,12 +84,12 @@ router.post('/signup' , (req , res , next) => {
         console.log('Email sent: ' + info.response);
       }
     });
-      res.redirect('/login')
+      res.redirect('/login');
     })
-    .catch(err => next(err))
+    .catch(err => next(err));
     
-  })
-})
+  });
+});
 
 router.get("/login", (req, res, next) => {
   res.render("auth/login" , { "errorMessage": req.flash("error") });

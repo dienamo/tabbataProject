@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const express = require('express');
 const router  = express.Router();
 const Brand = require('../models/brand');
@@ -12,15 +12,15 @@ router.get('/brand/:id' , (req , res , next) => {
     }
   })
   .then(items => {
-    res.render('brand/index' , {items})
-  })
-})
+    res.render('brand/index' , {items});
+  });
+});
 
 router.get('/brand/:id/product-details' , (req, res, next) => {
   Product.findById(req.params.id)
   .then(product => {
-    res.render('brand/product-details' , {product})
-  })
-})
+    res.render('brand/product-details' , {product});
+  });
+});
 
-module.exports = router
+module.exports = router;
