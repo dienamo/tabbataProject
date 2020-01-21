@@ -25,12 +25,12 @@ router.post('/book/orders' , (req , res , next) => {
       return updatedOrder
     })
     console.log(orders)
+    const place = orders[0].store
     const listeEmail = []
     orders.forEach(order => {
       order = order.product.name
       listeEmail.push(order)
     })
-    console.log(listeEmail)
     /*NODEMAILER START*/
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -49,7 +49,7 @@ router.post('/book/orders' , (req , res , next) => {
         
         Votre commande : 
 
-        Le ${date} à ${time}
+        Le ${date} à ${time} au ${place}
         
         Nous vous conseillons de conserver cet email.
         A bientôt sur Tabbata.com
@@ -67,7 +67,8 @@ router.post('/book/orders' , (req , res , next) => {
       updatedOrders,
       username : req.user.firstname,
       t0: updatedOrders[0].time,
-      d0: updatedOrders[0].date
+      d0: updatedOrders[0].date,
+      place
     })
   })
 })
