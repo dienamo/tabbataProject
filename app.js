@@ -15,17 +15,17 @@ const bcrypt = require("bcrypt");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const flash = require("connect-flash");
-const User = require('./models/user.js')
+const User = require('./models/user.js');
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 
 mongoose
   .connect('mongodb://localhost/tabbataproject', {useNewUrlParser: true})
   .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
   .catch(err => {
-    console.error('Error connecting to mongo', err)
+    console.error('Error connecting to mongo', err);
   });
 
 const app_name = require('./package.json').name;

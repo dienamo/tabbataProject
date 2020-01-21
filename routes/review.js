@@ -15,14 +15,14 @@ router.get('/review' , (req, res, next) => {
   .populate('user')
   .populate('product')
   .then(orders => {
-    const userOrders = []
+    const userOrders = [];
     orders.forEach(order => {
       if(order.user.id === req.user.id) {
-        userOrders.push(order)
+        userOrders.push(order);
       }
-    })
-    const userInfo = req.user
-    res.render('order/review', {userOrders , userInfo})
+    });
+    const userInfo = req.user;
+    res.render('order/review', {userOrders , userInfo});
   })
   .catch(err => next(err));
 });
