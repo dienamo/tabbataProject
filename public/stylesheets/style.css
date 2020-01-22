@@ -679,7 +679,7 @@ body {
   }
   
   #logo {
-    margin-left: 200px;
+    margin-right: 30px;
   }
   
   #search-bar {
@@ -687,7 +687,7 @@ body {
   }
 
   #logout img {
-    width: 20px;
+    width: 50px;
   }
 
   list-of-items-parents {
