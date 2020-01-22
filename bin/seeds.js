@@ -57,7 +57,7 @@ const data = [
     brand:
     {
       "name": "Sara Lavoine",
-      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_sara_lavoine_bthk2x.png"
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_sara_lavoine_bthk2x.png",
     },
     color: "",
     washing: "normal",
@@ -88,7 +88,7 @@ const data = [
     brand:
     {
       "name": "Sara Lavoine",
-      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_sara_lavoine_bthk2x.png"
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739949/TABBATA/Logo_marque/Brand_sara_lavoine_bthk2x.png",
     },
     color: "",
     washing: "normal",
@@ -157,7 +157,7 @@ const data = [
     name: "Robe courte en tweed",
     type: "Robe",
     description: "Robe femme Sandro, Robe courte en tweed, Ouverture par une patte de boutonnage contrastée sur le devant. Manches courtes, Deux poches bordées d'un passepoil or, Le mannequin porte une taille 36 / UK 8 / US 26",
-    reference: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740313/TABBATA/Image_sandro/Robe_courte_en_tweed_zkr1if.jpg",
+    reference: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_courte_empiecement_emjndf.jpg",
     size: "1",
     sex: "H",
     imgPath: "",
