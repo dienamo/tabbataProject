@@ -6,7 +6,7 @@ const Store = require('../models/store')
 Brand.collection.drop();
 Product.collection.drop();
 Store.collection.drop();
-
+// "mongodb://localhost/tabbataproject"
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
@@ -103,80 +103,80 @@ const data = [
 
   },
 
-  // {
-  //   name: "Robe longue en maille ornée de perles",
-  //   type: "Robe",
-  //   description: "Robe femme Sandro, Robe longue en maille côtelée, Col montant, Robe fendue sur les côtés, Robe ornée de perles blanches, Le mannequin porte une taille 36 / UK 8 / US 2-4",
-  //   reference: "",
-  //   size: "1",
-  //   sex: "H",
-  //   imgPath: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_longue_maille_evltib.jpg",
-  //   brand:
-  //   {
-  //     "name": "Sandro",
-  //     "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
-  //   },
-  //   color: "",
-  //   washing: "normal",
-  //   price: 10,
-  //   store: [
-  //     {
-  //       "name": "Sandro Paris 4",
-  //       "address": "50 Rue Vieille du Temple, 75004 Paris",
-  //       "latlng": ["48.8584825", "2.3586845"],
-  //     }
-  //   ]
-  // },
+  {
+    name: "Robe longue en maille ornée de perles",
+    type: "Robe",
+    description: "Robe femme Sandro, Robe longue en maille côtelée, Col montant, Robe fendue sur les côtés, Robe ornée de perles blanches, Le mannequin porte une taille 36 / UK 8 / US 2-4",
+    reference: "",
+    size: "1",
+    sex: "H",
+    imgPath: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_longue_maille_evltib.jpg",
+    brand:
+    {
+      "name": "Sandro",
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
+    },
+    color: "",
+    washing: "normal",
+    price: 10,
+    store: [
+      {
+        "name": "Sandro Paris 4",
+        "address": "50 Rue Vieille du Temple, 75004 Paris",
+        "latlng": ["48.8584825", "2.3586845"],
+      }
+    ]
+  },
 
-  // {
-  //   name: "Robe courte à empiècement",
-  //   type: "Robe",
-  //   description: "Robe courte femme Sandro : Coupe ajustée, Manches 3/4, Empiècement en guipure au décolleté et aux manches, Jeu de plis partants de la taille, Le mannequin porte une taille 36 / UK 8 / US 26",
-  //   reference: "",
-  //   size: "1",
-  //   sex: "H",
-  //   imgPath: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_courte_empiecement_emjndf.jpg",
-  //   brand:
-  //   {
-  //     "name": "Sandro",
-  //     "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
-  //   },
-  //   color: "",
-  //   washing: "normal",
-  //   price: 10,
-  //   store: [
-  //     {
-  //       "name": "Sandro Paris 4",
-  //       "address": "50 Rue Vieille du Temple, 75004 Paris",
-  //       "latlng": ["48.8584825", "2.3586845"],
-  //     }
-  //   ]
-  // },
+  {
+    name: "Robe courte à empiècement",
+    type: "Robe",
+    description: "Robe courte femme Sandro : Coupe ajustée, Manches 3/4, Empiècement en guipure au décolleté et aux manches, Jeu de plis partants de la taille, Le mannequin porte une taille 36 / UK 8 / US 26",
+    reference: "",
+    size: "1",
+    sex: "H",
+    imgPath: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_courte_empiecement_emjndf.jpg",
+    brand:
+    {
+      "name": "Sandro",
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
+    },
+    color: "",
+    washing: "normal",
+    price: 10,
+    store: [
+      {
+        "name": "Sandro Paris 4",
+        "address": "50 Rue Vieille du Temple, 75004 Paris",
+        "latlng": ["48.8584825", "2.3586845"],
+      }
+    ]
+  },
 
-  // {
-  //   name: "Robe courte en tweed",
-  //   type: "Robe",
-  //   description: "Robe femme Sandro, Robe courte en tweed, Ouverture par une patte de boutonnage contrastée sur le devant. Manches courtes, Deux poches bordées d'un passepoil or, Le mannequin porte une taille 36 / UK 8 / US 26",
-  //   reference: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_courte_empiecement_emjndf.jpg",
-  //   size: "1",
-  //   sex: "H",
-  //   imgPath: "",
-  //   brand:
-  //   {
-  //     "name": "Sandro",
-  //     "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
-  //   },
-  //   color: "",
-  //   washing: "normal",
-  //   price: 10,
-  //   store: [
-  //     {
-  //       "name": "Sandro Paris 4",
-  //       "address": "50 Rue Vieille du Temple, 75004 Paris",
-  //       "latlng": ["48.8584825", "2.3586845"],
-  //     }
-  //   ]
-  // },
+  {
+    name: "Robe courte en tweed",
+    type: "Robe",
+    description: "Robe femme Sandro, Robe courte en tweed, Ouverture par une patte de boutonnage contrastée sur le devant. Manches courtes, Deux poches bordées d'un passepoil or, Le mannequin porte une taille 36 / UK 8 / US 26",
+    reference: "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578740312/TABBATA/Image_sandro/robe_courte_empiecement_emjndf.jpg",
+    size: "1",
+    sex: "H",
+    imgPath: "",
+    brand:
+    {
+      "name": "Sandro",
+      "imgPath": "https://res.cloudinary.com/dvhkgds3a/image/upload/v1578739948/TABBATA/Logo_marque/brand_sandro_e83qyj.png",
+    },
+    color: "",
+    washing: "normal",
+    price: 10,
+    store: [
+      {
+        "name": "Sandro Paris 4",
+        "address": "50 Rue Vieille du Temple, 75004 Paris",
+        "latlng": ["48.8584825", "2.3586845"],
+      }
+    ]
+  },
 
   {
     name: "JEAN NEW MICK",
